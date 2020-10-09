@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Github Information and Submission</header>
+        
+        <a class="nav-link" href="#Git_Installation">Git Installation</a>
+        <a class="nav-link" href="#Creating_a_new_Repository">Creating a new Repository</a>
+        <a class="nav-link" href="#Initialize">Initialize</a>
+        <a class="nav-link" href="#Add_the_files_in_your_new_local_repository">Add the files in your new local repository</a>
+        <a class="nav-link" href="#Commit_the_files_that_you've_staged_in_your_local_repository">Commit the files that you've staged in your local repository</a>
+        <a class="nav-link" href="#copy_the_remote_repository_URL">copy the remote repository URL
+      </a>
+       <a class="nav-link" href="#Push_Origin_master">Push Origin master
+      </a>  
+       <a class="nav-link" href="#Pull_request">Pull request</a>
+        <a class="nav-link" href="#Cloning_The_Repo">Cloning The Repo</a>
+      
+      </nav>
+      
+      <main id="main-doc">
+        
+        <section id="Git_Installation" class="main-section">
+          <header>Git Installation</header>
+          <div>
+            <pre>
+              <code class="nohighlight">$ sudo apt-get install git-all
+$git version</code>
+            </pre>
+            <p>To install Git, run the following command.Once the command output has completed, you can verify the installation by typing</p>
+          </div>  
+        </section>
+        
+        <section id="Creating_a_new_Repository" class="main-section">
+          <header>Creating a new Repository</header>
+          <div>
+            <p>
+            <ul>
+              <li>In the upper-right corner of any page</li>
+              <li>Use the drop-down menu, and select New repository</li>
+              <li>Type a short, memorable name for your repository</li>
+              <li>Optionally, add a description of your repository</li>
+              <li>Choose to make the repository either public or private</li>
+              <li>Select Initialize this repository with a README.</li>
+              <li>Click Create repository</li>
+            </ul>
+      </p>
+          </div>
+        </section>
+      
+      <section id="Initialize" class="main-section">
+          <header>Initialize</header>
+          <div>
+            <pre>
+              <code class="nohighlight">$ git init</code>
+            </pre>
+            <p>It turns any directory into a Git repository.To initialize a repository, Git creates a hidden directory called .git. That directory stores all of the objects and refs that Git uses and creates as a part of your project's history. This hidden .git directory is what separates a regular directory from a Git repository.</p>
+          </div>  
+        </section>
+      
+      <section id="Add_the_files_in_your_new_local_repository" class="main-section">
+          <header>Add the files in your new local repository</header>
+          <div>
+            <pre>
+              <code class="nohighlight">$ git add .</code>
+            </pre>
+            <p>selects that file, and moves it to the staging area, marking it for inclusion in the next commit. You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.This means if you git add a deleted file the deletion is staged for commit. The language of "add" when you're actually "deleting" can be confusing. If you think or use git stage in place of git add, the reality of what is happening may be more clear.</p>
+          </div>  
+        </section>
+      
+      <section id="Commit_the_files_that_you've_staged_in_your_local_repository" class="main-section">
+          <header>Commit the files that you've staged in your local repository</header>
+          <div>
+            <pre>
+              <code class="nohighlight">$ git commit -m "First commit"</code>
+      </pre>
+       <p>It creates a commit, which is like a snapshot of your repository. These commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is. Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.</p>
+          </div>  
+        </section>
+      
+      <section id="copy_the_remote_repository_URL" class="main-section">
+          <header>copy the remote repository URL</header>
+          <div>
+            <pre>
+              <code class="nohighlight">$ git remote add origin https://github.com/Anda2000/Technical-Page.git</code>
+            </pre>
+            <p>A remote in Git is a common repository that all team members use to exchange their changes. In most cases, such a remote repository is stored on a code hosting service like GitHub or on an internal server. In contrast to a local repository, a remote typically does not provide a file tree of the project's current state.</p>
+          </div>  
+        </section>
+      
+      <section id="Push_Origin_master" class="main-section">
+          <header>Push Origin master</header>
+          <div>
+            <pre>
+              <code class="nohighlight">$ git push origin master</code>
+            </pre>
+            <p>updates the remote branch with local commits. It is one of the four commands in Git that prompts interaction with the remote repository. You can also think of git push as update or publish.
+      
+      By default, git push only updates the corresponding branch on the remote. So, if you are checked out to the master branch when you execute git push, then only the master branch will be updated. It's always a good idea to use git status to see what branch you are on before pushing to the remote.</p>
+          </div>  
+        </section>
+      
+      <section id="Pull_request" class="main-section">
+          <header>Pull request</header>
+          <div>
+            <pre>
+              <code class="nohighlight">$ git pull</code>
+            </pre>
+            <p>It updates your current local working branch, and all of the remote tracking branches. It's a good idea to run git pull regularly on the branches you are working on locally.Without git pull, (or the effect of it,) your local branch wouldn't have any of the updates that are present on the remote.</p>
+          </div>  
+        </section>
+      
+      <section id="Cloning_The_Repo" class="main-section">
+          <header>Cloning The Repo</header>
+          <div>
+            <pre>
+              <code class="nohighlight">$ git clone</code>
+            </pre>
+            <p>The git clone command is used to create a copy of a specific repository or branch within a repository.Git is a distributed version control system. Maximize the advantages of a full repository on your own machine by cloning.</p>
+          </div>  
+        </section>
+      </main>  
+</body>
+</html>
